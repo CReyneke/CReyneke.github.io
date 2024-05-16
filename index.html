@@ -1,78 +1,170 @@
-<div class="tab-pane fade show active" id="about">
-    <div class="container text-center my-5">
-        <h2>About Me</h2>
-        <img src="path/to/your/image.png" alt="Profile Image" class="about-img mb-4">
-        <p>
-            Hi there 👋 I am a data scientist who:
-            <br>💪 loves to solve complex problems in diverse domains
-            <br>🌍 is currently working in the field of Climate Change
-            <br>🔥 handled challenging tasks in Bioinformatics & Telecommunications
-            <br>⚡ plays with all kinds of data structures – text, image, graph, numerical etc
-            <br>🌟 at the end of the day, aims to make the data shine!
-        </p>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- CV Tab -->
-<div class="tab-pane fade" id="cv">
-    <div class="container text-center my-5">
-        <h2>CV</h2>
-        <p>Here you can add your CV details...</p>
-    </div>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
 
-<!-- Projects Tab -->
-<div class="tab-pane fade" id="projects">
-    <div class="container my-5">
-        <h2 class="text-center mb-5">Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="images/projects/1.jpg" alt="Project 1 Image" class="card-img-top">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Churn Analysis - Power BI</h5>
-                        <p class="card-text">Followed the steps of cleaning, analyzing, and interpreting data from a fictitious cell company to discover possible reasons for high churn rates in certain demographics.</p>
-                        <a href="#" class="btn btn-secondary">Source Code</a>
-                    </div>
-                </div>
+        .navbar {
+            background-color: #000;
+            border-bottom: 1px solid #333;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .nav-link {
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .nav-link:hover {
+            color: #ffcc00;
+        }
+
+        .tab-content {
+            padding: 20px;
+        }
+
+        .about-img {
+            border-radius: 50%;
+            border: 3px solid #fff;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+
+        .contact-info a {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Make the Data Shine!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-toggle="tab">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cv" data-toggle="tab">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects" data-toggle="tab">Projects</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="images/projects/2.png" alt="Project 2 Image" class="card-img-top">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">HR Analytics - PowerBI</h5>
-                        <p class="card-text">Utilized various Power BI skills to import, analyze, and visualize Human Resources (HR) data for a fictitious company in Power BI.</p>
-                        <a href="#" class="btn btn-secondary">Source Code</a>
-                    </div>
-                </div>
+        </div>
+    </nav>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+        <!-- About Me Tab -->
+        <div class="tab-pane fade show active" id="about">
+            <div class="container text-center my-5">
+                <h2>About Me</h2>
+                <img src="path/to/your/image.png" alt="Profile Image" class="about-img mb-4">
+                <p>
+                    Hi there 👋 I am a data scientist who:
+                    <br>💪 loves to solve complex problems in diverse domains
+                    <br>🌍 is currently working in the field of Climate Change
+                    <br>🔥 handled challenging tasks in Bioinformatics & Telecommunications
+                    <br>⚡ plays with all kinds of data structures – text, image, graph, numerical etc
+                    <br>🌟 at the end of the day, aims to make the data shine!
+                </p>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="images/projects/3.png" alt="Project 3 Image" class="card-img-top">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Olympics Data Exploration - SQL</h5>
-                        <p class="card-text">Used a wide range of SQL skills to sort, analyze, and interpret Olympics data and answer a set of 20 questions related to the data.</p>
-                        <a href="#" class="btn btn-secondary">Source Code</a>
+        </div>
+
+        <!-- CV Tab -->
+        <div class="tab-pane fade" id="cv">
+            <div class="container text-center my-5">
+                <h2>CV</h2>
+                <p>Here you can add your CV details...</p>
+            </div>
+        </div>
+
+        <!-- Projects Tab -->
+        <div class="tab-pane fade" id="projects">
+            <div class="container my-5">
+                <h2 class="text-center mb-5">Projects</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="images/projects/1.jpg" alt="Project 1 Image" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Churn Analysis - Power BI</h5>
+                                <p class="card-text">Followed the steps of cleaning, analyzing, and interpreting data from a fictitious cell company to discover possible reasons for high churn rates in certain demographics.</p>
+                                <a href="#" class="btn btn-secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="images/projects/2.png" alt="Project 2 Image" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">HR Analytics - PowerBI</h5>
+                                <p class="card-text">Utilized various Power BI skills to import, analyze, and visualize Human Resources (HR) data for a fictitious company in Power BI.</p>
+                                <a href="#" class="btn btn-secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img src="images/projects/3.png" alt="Project 3 Image" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Olympics Data Exploration - SQL</h5>
+                                <p class="card-text">Used a wide range of SQL skills to sort, analyze, and interpret Olympics data and answer a set of 20 questions related to the data.</p>
+                                <a href="#" class="btn btn-secondary">Source Code</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-document.querySelectorAll('.nav-link').forEach(function(navLink) {
-    navLink.addEventListener('click', function() {
-        document.querySelectorAll('.tab-pane').forEach(function(tabPane) {
-            tabPane.classList.remove('show', 'active');
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.nav-link').forEach(function(navLink) {
+            navLink.addEventListener('click', function() {
+                document.querySelectorAll('.tab-pane').forEach(function(tabPane) {
+                    tabPane.classList.remove('show', 'active');
+                });
+                document.querySelector(this.getAttribute('href')).classList.add('show', 'active');
+            });
         });
-        document.querySelector(this.getAttribute('href')).classList.add('show', 'active');
-    });
-});
-</script>
+    </script>
 </body>
 
 </html>
