@@ -1,170 +1,491 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE HTML>
+<!--
+    Dopetrope by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analyst Portfolio</title>
-    <!-- Bootstrap CSS -->
+    <title>Dopetrope by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Bootstrap CSS for old design sections -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Custom styles */
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            background-color: #000;
-            border-bottom: 1px solid #333;
-        }
-
-        .navbar-brand {
-            font-size: 1.5rem;
-            color: #fff;
-        }
-
-        .nav-link {
-            color: #fff;
-            margin: 0 10px;
-        }
-
-        .nav-link:hover {
-            color: #ffcc00;
-        }
-
-        .tab-content {
-            padding: 20px;
-        }
-
+        /* Custom styles from old design */
         .about-img {
             border-radius: 50%;
-            border: 3px solid #fff;
+            border: 3px solid #000;
             width: 150px;
             height: 150px;
             object-fit: cover;
         }
-
-        h2 {
-            margin-top: 20px;
+        nav .navbar-nav .nav-link {
+            color: white;
+            transition: color 0.3s;
         }
-
-        .social-icons img {
-            width: 30px;
-            height: 30px;
-            margin: 0 10px;
+        nav .navbar-nav .nav-link:hover {
+            color: #ff00ff;
         }
-
-        .contact-info a {
-            color: #ffcc00;
+        html {
+            scroll-behavior: smooth;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #343a40;
         }
     </style>
 </head>
+<body class="homepage is-preload">
+    <div id="page-wrapper">
 
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Make the Data Shine!</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" data-toggle="tab">About Me</a>
+        <!-- Header -->
+        <section id="header">
+            <!-- Logo -->
+            <h1><a href="index.html">Dopetrope</a></h1>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Dropdown</a>
+                        <ul>
+                            <li><a href="#">Lorem ipsum dolor</a></li>
+                            <li><a href="#">Magna phasellus</a></li>
+                            <li><a href="#">Etiam dolore nisl</a></li>
+                            <li>
+                                <a href="#">Phasellus consequat</a>
+                                <ul>
+                                    <li><a href="#">Magna phasellus</a></li>
+                                    <li><a href="#">Etiam dolore nisl</a></li>
+                                    <li><a href="#">Veroeros feugiat</a></li>
+                                    <li><a href="#">Nisl sed aliquam</a></li>
+                                    <li><a href="#">Dolore adipiscing</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Veroeros feugiat</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cv" data-toggle="tab">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects" data-toggle="tab">Projects</a>
-                    </li>
+                    <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                    <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                    <li><a href="no-sidebar.html">No Sidebar</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+            </nav>
 
-    <!-- Tab Content -->
-    <div class="tab-content">
-        <!-- About Me Tab -->
-        <div class="tab-pane fade show active" id="about">
-            <div class="container text-center my-5">
-                <h2>About Me</h2>
-                <img src="path/to/your/image.png" alt="Profile Image" class="about-img mb-4">
-                <p>
-                    Hi there 👋 I am a data scientist who:
-                    <br>💪 loves to solve complex problems in diverse domains
-                    <br>🌍 is currently working in the field of Climate Change
-                    <br>🔥 handled challenging tasks in Bioinformatics & Telecommunications
-                    <br>⚡ plays with all kinds of data structures – text, image, graph, numerical etc
-                    <br>🌟 at the end of the day, aims to make the data shine!
-                </p>
-            </div>
-        </div>
+            <!-- Banner -->
+            <section id="banner">
+                <header>
+                    <h2>Howdy. This is Dopetrope.</h2>
+                    <p>A responsive template by HTML5 UP</p>
+                </header>
+            </section>
 
-        <!-- CV Tab -->
-        <div class="tab-pane fade" id="cv">
-            <div class="container text-center my-5">
-                <h2>CV</h2>
-                <p>Here you can add your CV details...</p>
-            </div>
-        </div>
-
-        <!-- Projects Tab -->
-        <div class="tab-pane fade" id="projects">
-            <div class="container my-5">
-                <h2 class="text-center mb-5">Projects</h2>
+            <!-- Intro -->
+            <section id="intro" class="container">
                 <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="images/projects/1.jpg" alt="Project 1 Image" class="card-img-top">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Churn Analysis - Power BI</h5>
-                                <p class="card-text">Followed the steps of cleaning, analyzing, and interpreting data from a fictitious cell company to discover possible reasons for high churn rates in certain demographics.</p>
-                                <a href="#" class="btn btn-secondary">Source Code</a>
+                    <div class="col-4 col-12-medium">
+                        <section class="first">
+                            <i class="icon solid featured fa-cog"></i>
+                            <header>
+                                <h2>Ipsum consequat</h2>
+                            </header>
+                            <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                        </section>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <section class="middle">
+                            <i class="icon solid featured alt fa-bolt"></i>
+                            <header>
+                                <h2>Magna etiam dolor</h2>
+                            </header>
+                            <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                        </section>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <section class="last">
+                            <i class="icon solid featured alt2 fa-star"></i>
+                            <header>
+                                <h2>Tempus adipiscing</h2>
+                            </header>
+                            <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                        </section>
+                    </div>
+                </div>
+                <footer>
+                    <ul class="actions">
+                        <li><a href="#" class="button large">Get Started</a></li>
+                        <li><a href="#" class="button alt large">Learn More</a></li>
+                    </ul>
+                </footer>
+            </section>
+        </section>
+
+        <!-- Main -->
+        <section id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Portfolio -->
+                        <section>
+                            <header class="major">
+                                <h2>My Portfolio</h2>
+                            </header>
+                            <div class="row">
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Ipsum feugiat et dolor</h3>
+                                        </header>
+                                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="#" class="button alt">Find out more</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Sed etiam lorem nulla</h3>
+                                        </header>
+                                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="#" class="button alt">Find out more</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Consequat et tempus</h3>
+                                        </header>
+                                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="#" class="button alt">Find out more</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Blandit sed adipiscing</h3>
+                                        </header>
+                                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="#" class="button alt">Find out more</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Etiam nisl consequat</h3>
+                                        </header>
+                                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="#" class="button alt">Find out more</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                                <div class="col-4 col-6-medium col-12-small">
+                                    <section class="box">
+                                        <a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Dolore nisl feugiat</h3>
+                                        </header>
+                                        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="#" class="button alt">Find out more</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- About Section -->
+                    <section id="about" class="container text-center my-5">
+                        <h2 class="mb-4">About</h2>
+                        <img src="images/about/1.jpg" alt="Profile Image" class="about-img mb-4">
+                        <p style="max-width: 600px; margin: 0 auto;">
+                            My name is Cobus Reyneke. I am a high school teacher with a special interest in data analytics.
+                            Finding complex links in data and using these insights to make interesting stories and visualizations is what
+                            I love to do. I'm exceptionally skilled at using Power BI to create dashboards and live visualizations
+                            that are interesting and useful. I'm also very good at using Python to change, analyze, and automate data processes.
+                        </p>
+                        <p style="max-width: 600px; margin: 1rem auto 0;">
+                            I'm also strong at Excel, where I use advanced tools, pivot tables, and macros to analyze and report data effectively. 
+                            Because I know SQL, I can handle and query big datasets accurately, which helps me create effective data pipelines.
+                        </p>
+                    </section>
+
+                    <!-- Projects Section -->
+                    <section id="projects" class="container my-5">
+                        <h2 class="text-center mb-5">Projects</h2>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img src="images/projects/1.jpg" alt="Project 1 Image" class="card-img-top">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Churn Analysis - Power BI</h5>
+                                        <p class="card-text">Followed the steps of cleaning, analyzing, and interpreting data from a fictitious cell company to discover possible reasons for high churn rates in certain demographics.</p>
+                                        <a href="#" class="btn btn-primary me-2">Blog Post</a>
+                                        <a href="#" class="btn btn-secondary">Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img src="images/projects/2.png" alt="Project 2 Image" class="card-img-top">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">HR Analytics - PowerBI</h5>
+                                        <p class="card-text">Utilized various Power BI skills to import, analyze, and visualize Human Resources (HR) data for a ficticious company in Power BI</p>
+                                        <a href="#" class="btn btn-primary me-2">Blog Post</a>
+                                        <a href="#" class="btn btn-secondary">Source Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img src="images/projects/3.png" alt="Project 3 Image" class="card-img-top">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Olympics Data Exploration - SQL</h5>
+                                        <p class="card-text">Used a wide range of SQL skills to sort, analyze, and interpret Olympics data and answer a set of 20 questions related to the data.</p>
+                                        <a href="#" class="btn btn-primary me-2">Blog Post</a>
+                                        <a href="#" class="btn btn-secondary">Source Code</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="images/projects/2.png" alt="Project 2 Image" class="card-img-top">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">HR Analytics - PowerBI</h5>
-                                <p class="card-text">Utilized various Power BI skills to import, analyze, and visualize Human Resources (HR) data for a fictitious company in Power BI.</p>
-                                <a href="#" class="btn btn-secondary">Source Code</a>
+                    </section>
+
+                    <!-- Skills Section -->
+                    <section id="skills" class="container my-5">
+                        <h2 class="text-center mb-5">Skills</h2>
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <div class="card h-100 text-center">
+                                    <img src="images/skills/1.png" alt="Skill 1 Icon" class="card-img-top" style="width: 100px; height: 100px; margin: auto;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Python</h5>
+                                        <p class="card-text">Skilled in Python for data analysis and automation, with experience in libraries such as Pandas, NumPy, and Matplotlib for data manipulation, analysis, and visualization. Able to write clean, efficient code to solve a variety of problems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card h-100 text-center">
+                                    <img src="images/skills/2.png" alt="Skill 2 Icon" class="card-img-top" style="width: 100px; height: 100px; margin: auto;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Power BI</h5>
+                                        <p class="card-text">Experienced in using Power BI for data visualization and business intelligence. Capable of creating interactive dashboards, reports, and charts to present data insights effectively. Proficient in data modeling and DAX functions for advanced analysis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card h-100 text-center">
+                                    <img src="images/skills/3.png" alt="Skill 3 Icon" class="card-img-top" style="width: 100px; height: 100px; margin: auto;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SQL</h5>
+                                        <p class="card-text">Proficient in SQL for data manipulation and analysis, including querying databases, joining tables, and performing aggregate functions. Comfortable with complex queries for data retrieval and transformation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card h-100 text-center">
+                                    <img src="images/skills/4.png" alt="Skill 4 Icon" class="card-img-top" style="width: 100px; height: 100px; margin: auto;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Data Storytelling</h5>
+                                        <p class="card-text">Adept at using data visualization and narrative techniques to tell compelling stories with data. Can transform complex data sets into clear, actionable insights for decision-makers, using charts, graphs, and descriptive summaries to convey information.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </section>
+
+                    <!-- Contact Me Section -->
+                    <section id="contact" class="container my-5 py-5 text-center" style="background-color: #343a40; color: white;">
+                        <h2 class="mb-4">Contact Me</h2>
+                        <div class="text-center mb-4">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <a href="mailto:youremail@example.com" class="text-white">cobusreyneke4@gmail.com</a>
+                        </div>
+                        <div class="row justify-content-center">
+                            <a href="https://www.linkedin.com/in/cobusreyneke/" target="_blank" class="mx-2">
+                                <img src="icons/linkedin.png" alt="LinkedIn" class="rounded-circle p-2 bg-pink" style="width: 50px; height: 50px;">
+                            </a>
+                            <span>LinkedIn</span>
+                        </div>
+                        <div class="row justify-content-center">
+                            <a href="https://www.datacamp.com/portfolio/cobusreyneke4" target="_blank" class="mx-2">
+                                <img src="icons/datacamp.png" alt="DataCamp" class="rounded-circle p-2 bg-pink" style="width: 50px; height: 50px;">
+                            </a>
+                            <span>DataCamp</span>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+                        <section>
+                            <header>
+                                <h2>Blandit nisl adipiscing</h2>
+                            </header>
+                            <ul class="dates">
+                                <li>
+                                    <span class="date">Jan <strong>27</strong></span>
+                                    <h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
+                                    <p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+                                </li>
+                                <li>
+                                    <span class="date">Jan <strong>23</strong></span>
+                                    <h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
+                                    <p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
+                                </li>
+                                <li>
+                                    <span class="date">Jan <strong>15</strong></span>
+                                    <h3><a href="#">Magna tempus lorem feugiat</a></h3>
+                                    <p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
+                                </li>
+                                <li>
+                                    <span class="date">Jan <strong>12</strong></span>
+                                    <h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
+                                    <p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
+                                </li>
+                                <li>
+                                    <span class="date">Jan <strong>10</strong></span>
+                                    <h3><a href="#">Blandit tempus aliquam?</a></h3>
+                                    <p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
+                                </li>
+                            </ul>
+                        </section>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="images/projects/3.png" alt="Project 3 Image" class="card-img-top">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Olympics Data Exploration - SQL</h5>
-                                <p class="card-text">Used a wide range of SQL skills to sort, analyze, and interpret Olympics data and answer a set of 20 questions related to the data.</p>
-                                <a href="#" class="btn btn-secondary">Source Code</a>
-                            </div>
+                    <div class="col-4 col-12-medium">
+                        <section>
+                            <header>
+                                <h2>What's this all about?</h2>
+                            </header>
+                            <a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+                            <p>
+                                This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
+                                <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
+                                the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
+                            </p>
+                            <footer>
+                                <ul class="actions">
+                                    <li><a href="#" class="button">Find out more</a></li>
+                                </ul>
+                            </footer>
+                        </section>
+                    </div>
+                    <div class="col-4 col-6-medium col-12-small">
+                        <section>
+                            <header>
+                                <h2>Tempus consequat</h2>
+                            </header>
+                            <ul class="divided">
+                                <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+                                <li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+                                <li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+                                <li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+                                <li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
+                                <li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-4 col-6-medium col-12-small">
+                        <section>
+                            <header>
+                                <h2>Ipsum et phasellus</h2>
+                            </header>
+                            <ul class="divided">
+                                <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+                                <li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+                                <li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+                                <li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+                                <li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
+                                <li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-4 col-12-medium">
+                        <section>
+                            <header>
+                                <h2>Vitae tempor lorem</h2>
+                            </header>
+                            <ul class="social">
+                                <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+                                <li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+                                <li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+                                <li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
+                                <li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Address</h3>
+                                    <p>
+                                        Untitled Incorporated<br />
+                                        1234 Somewhere Road Suite<br />
+                                        Nashville, TN 00000-0000
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Mail</h3>
+                                    <p><a href="#">someone@untitled.tld</a></p>
+                                </li>
+                                <li>
+                                    <h3>Phone</h3>
+                                    <p>(800) 000-0000</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-12">
+                        <!-- Copyright -->
+                        <div id="copyright">
+                            <ul class="links">
+                                <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 
-    <!-- Bootstrap JS -->
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Bootstrap JS for old design sections -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.querySelectorAll('.nav-link').forEach(function(navLink) {
-            navLink.addEventListener('click', function() {
-                document.querySelectorAll('.tab-pane').forEach(function(tabPane) {
-                    tabPane.classList.remove('show', 'active');
-                });
-                document.querySelector(this.getAttribute('href')).classList.add('show', 'active');
-            });
-        });
-    </script>
 </body>
-
 </html>
