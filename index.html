@@ -10,220 +10,177 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Custom styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #ffcc00 !important;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: #007bff;
+        }
+
         .about-img {
-            border-radius: 50%; /* Makes the image circular */
-            border: 3px solid #000; /* Black solid border around the image */
-            width: 150px; /* Image width */
-            height: 150px; /* Image height */
-            object-fit: cover; /* Ensures the image is contained within the circular shape */
-        }
-        
-        /* Navbar Links */
-        nav .navbar-nav .nav-link {
-            color: white; /* White text color */
-            transition: color 0.3s; /* Transition effect for link hover */
+            border-radius: 50%;
+            border: 3px solid #007bff;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
         }
 
-        /* Navbar Links Hover Effect */
-        nav .navbar-nav .nav-link:hover {
-            color: #ff00ff; /* Pink color on hover */
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
         }
 
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
+        .card:hover {
+            transform: translateY(-10px);
         }
-        /* Sticky Navbar */
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background-color: #343a40; /* Dark background color for the navbar */
+
+        .card-title {
+            color: #007bff;
+        }
+
+        .contact-section {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .contact-section a {
+            color: #ffcc00;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+        }
+
+        .social-icon img {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
 
 <body>
-    <!-- Sticky Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#home">Cobus Reyneke</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <body id="home">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Cobus Reyneke</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- About Section -->
     <section id="about" class="container text-center my-5">
-        <h2 class="mb-4">About</h2>
-        <!-- Placeholder for image -->
-        <img src="images\about\1.jpg" alt="Profile Image" class="about-img mb-4">
-        <!-- Text content -->
-        <p style="max-width: 600px; margin: 0 auto;">
+        <h2 class="section-title">About</h2>
+        <img src="images/about/1.jpg" alt="Profile Image" class="about-img mb-4">
+        <p class="lead">
             My name is Cobus Reyneke. I am a high school teacher with a special interest in data analytics.
             Finding complex links in data and using these insights to make interesting stories and visualizations is what
             I love to do. I'm exceptionally skilled at using Power BI to create dashboards and live visualizations
             that are interesting and useful. I'm also very good at using Python to change, analyze, and automate data processes.
         </p>
-        <p style="max-width: 600px; margin: 1rem auto 0;">
+        <p class="lead">
             I'm also strong at Excel, where I use advanced tools, pivot tables, and macros to analyze and report data effectively. 
             Because I know SQL, I can handle and query big datasets accurately, which helps me create effective data pipelines.
         </p>
     </section>
 
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-<!-- Projects Section -->
-<section id="projects" class="container my-5">
-    <!-- Projects Heading -->
-    <h2 class="text-center mb-5">Projects</h2>
-
-    <!-- Row for Project Cards -->
-    <div class="row">
-        <!-- First Project Card -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <img src="images/projects/1.jpg" alt="Project 1 Image" class="card-img-top">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Churn Analysis - Power BI</h5>
-                    <p class="card-text">Followed the steps of cleaning, analyzing, and interpreting data from a fictitious cell company to discover possible reasons for high churn rates in certain demographics.</p>
-                    <a href="https://www.linkedin.com/in/cobusreyneke/overlay/1704853269578/single-media-viewer/?profileId=ACoAAD5hUQQBGflIkS9bNXB97ULzDFzeqhdyQJY" class="btn btn-secondary">Source Code</a>
+    <!-- Projects Section -->
+    <section id="projects" class="container my-5">
+        <h2 class="section-title text-center">Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/projects/1.jpg" alt="Project 1 Image" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Churn Analysis - Power BI</h5>
+                        <p class="card-text">Followed the steps of cleaning, analyzing, and interpreting data from a fictitious cell company to discover possible reasons for high churn rates in certain demographics.</p>
+                        <a href="https://www.linkedin.com/in/cobusreyneke/overlay/1704853269578/single-media-viewer/?profileId=ACoAAD5hUQQBGflIkS9bNXB97ULzDFzeqhdyQJY" class="btn btn-outline-primary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/projects/2.png" alt="Project 2 Image" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">HR Analytics - PowerBI</h5>
+                        <p class="card-text">Utilized various Power BI skills to import, analyze, and visualize Human Resources (HR) data for a fictitious company in Power BI.</p>
+                        <a href="https://www.linkedin.com/in/cobusreyneke/overlay/1705218671128/single-media-viewer/?profileId=ACoAAD5hUQQBGflIkS9bNXB97ULzDFzeqhdyQJY" class="btn btn-outline-primary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/projects/3.png" alt="Project 3 Image" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Olympics Data Exploration - SQL</h5>
+                        <p class="card-text">Used a wide range of SQL skills to sort, analyze, and interpret Olympics data and answer a set of 20 questions related to the data.</p>
+                        <a href="https://github.com/CReyneke/Olympics-Data-Exploration/blob/main/notebook.ipynb" class="btn btn-outline-primary">Source Code</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Second Project Card -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <img src="images/projects/2.png" alt="Project 2 Image" class="card-img-top">
-                <div class="card-body text-center">
-                    <h5 class="card-title">HR Analytics - PowerBI</h5>
-                    <p class="card-text">Utilized various Power BI skills to import, analyze, and visualize Human Resources (HR) data for a ficticious company in Power BI</p>
-                    <a href="https://www.linkedin.com/in/cobusreyneke/overlay/1705218671128/single-media-viewer/?profileId=ACoAAD5hUQQBGflIkS9bNXB97ULzDFzeqhdyQJY" class="btn btn-secondary">Source Code</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container my-5">
+        <h2 class="section-title text-center">Skills</h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="images/skills/1.png" alt="Skill 1 Icon" class="card-img-top mx-auto mt-4" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Skilled in Python for data analysis and automation, with experience in libraries such as Pandas, NumPy, and Matplotlib for data manipulation, analysis, and visualization.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Third Project Card -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <img src="images/projects/3.png" alt="Project 3 Image" class="card-img-top">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Olympics Data Exploration - SQL</h5>
-                    <p class="card-text">Used a wide range of SQL skills to sort, analyze, and interpret Olympics data and answer a set of 20 questions related to the data.</p>
-                    <a href="https://github.com/CReyneke/Olympics-Data-Exploration/blob/main/notebook.ipynb" class="btn btn-secondary">Source Code</a>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="images/skills/2.png" alt="Skill 2 Icon" class="card-img-top mx-auto mt-4" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Power BI</h5>
+                        <p class="card-text">Experienced in using Power BI for data visualization and business intelligence. Capable of creating interactive dashboards, reports, and charts to present data insights effectively.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills" class="container my-5">
-    <!-- Skills Heading -->
-    <h2 class="text-center mb-5">Skills</h2>
-
-    <!-- Row for Skill Cards -->
-    <div class="row">
-        <!-- First Skill Card -->
-        <div class="col-md-3 mb-4">
-            <div class="card h-100 text-center">
-                <img src="images/skills/1.png" alt="Skill 1 Icon" class="card-img-top" style="width: 100px; height: 100px; margin: auto;">
-                <div class="card-body">
-                    <h5 class="card-title">Python</h5>
-                    <p class="card-text">Skilled in Python for data analysis and automation, with experience in libraries such as Pandas, NumPy, and Matplotlib for data manipulation, analysis, and visualization. Able to write clean, efficient code to solve a variety of problems.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Second Skill Card -->
-        <div class="col-md-3 mb-4">
-            <div class="card h-100 text-center">
-                <img src="images/skills/2.png" alt="Skill 2 Icon" class="card-img-top" style="width: 100px; height: 100px; margin: auto;">
-                <div class="card-body">
-                    <h5 class="card-title">Power BI</h5>
-                    <p class="card-text">Experienced in using Power BI for data visualization and business intelligence. Capable of creating interactive dashboards, reports, and charts to present data insights effectively. Proficient in data modeling and DAX functions for advanced analysis.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Third Skill Card -->
-        <div class="col-md-3 mb-4">
-            <div class="card h-100 text-center">
-                <img src="images/skills/3.png" alt="Skill 3 Icon" class="card-img-top" style="width: 100px; height: 100px; margin: auto;">
-                <div class="card-body">
-                    <h5 class="card-title">SQL</h5>
-                    <p class="card-text">Proficient in SQL for data manipulation and analysis, including querying databases, joining tables, and performing aggregate functions. Comfortable with complex queries for data retrieval and transformation.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Fourth Skill Card -->
-        <div class="col-md-3 mb-4">
-            <div class="card h-100 text-center">
-                <img src="images/skills/4.png" alt="Skill 4 Icon" class="card-img-top" style="width: 100px; height: 100px; margin: auto;">
-                <div class="card-body">
-                    <h5 class="card-title">Data Storytelling</h5>
-                    <p class="card-text">Adept at using data visualization and narrative techniques to tell compelling stories with data. Can transform complex data sets into clear, actionable insights for decision-makers, using charts, graphs, and descriptive summaries to convey information.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Me Section -->
-<section id="contact" class="container my-5 py-5 text-center" style="background-color: #343a40; color: white;">
-    <!-- Contact Heading -->
-    <h2 class="mb-4">Contact Me</h2>
-
-    <!-- Contact Information -->
-    <div class="text-center mb-4">
-        <i class="bi bi-envelope-fill me-2"></i>
-        <a href="mailto:cobusreyneke4@gmail.com" class="text-white">cobusreyneke4@gmail.com</a>
-    </div>
-
-
-    <!-- Social Media Icons -->
-    <div class="row justify-content-center">
-        <!-- LinkedIn Icon -->
-        <a href="https://www.linkedin.com/in/cobusreyneke/" target="_blank" class="mx-2">
-            <img src="icons/linkedin.png" alt="LinkedIn" class="rounded-circle p-2 bg-pink" style="width: 50px; height: 50px;">
-        </a>
-        <span>LinkedIn</span>
-    </div>
-        <!-- DataCamp Icon -->
-        <div class="row justify-content-center">
-        <a href="https://www.datacamp.com/portfolio/cobusreyneke4" target="_blank" class="mx-2">
-            <img src="icons/datacamp.png" alt="DataCamp" class="rounded-circle p-2 bg-pink" style="width: 50px; height: 50px;">
-        </a>
-        <span>DataCamp</span>
-    </div>
-    <div class="row justify-content-center">
-        <!-- LinkedIn Icon -->
-        <a href="https://medium.com/@cobusreyneke4" target="_blank" class="mx-2">
-            <img src="icons/medium.png" alt="Medium" class="rounded-circle p-2 bg-pink" style="width: 50px; height: 50px;">
-        </a>
-        <span>Medium</span>
-    </div>
-</section>
-
-</html>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img src="images/skills/3.png" alt="Skill 3 Icon" class="card-img-top mx-auto mt-4" style="width: 100px; height: 100px;">
+                    <div class="
