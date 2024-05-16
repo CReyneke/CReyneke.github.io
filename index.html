@@ -5,44 +5,61 @@
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>Cobus Reyneke Portfolio</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <!-- Bootstrap CSS for old design sections -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-            .about-img {
-                border-radius: 50%;
-                border: 3px solid #000;
-                width: 150px;
-                height: 150px;
-                object-fit: cover;
-            }
-            nav .navbar-nav .nav-link {
-                color: white;
-                transition: color 0.3s;
-            }
-            #nav ul > li > a {
-                color: white !important;
-            }
-            #nav ul > li > a:hover {
-                color: #343a40 !important;
-            }
-            html {
-                scroll-behavior: smooth;
-            }
-            nav {
-                position: sticky;
-                top: 0;
-                z-index: 1000;
-                background-color: #343a40;
-            }
-        </style>
-    </head>
-    
-    
+<head>
+    <title>Cobus Reyneke Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Bootstrap CSS for old design sections -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles from old design */
+        .about-img {
+            border-radius: 50%;
+            border: 3px solid #000;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        nav .navbar-nav .nav-link {
+            color: white;
+            transition: color 0.3s;
+        }
+        nav .navbar-nav .nav-link:hover {
+            color: #ff00ff;
+        }
+        nav #nav ul li a {
+            color: white !important;
+        }
+        #nav ul > li > a {
+            color: white !important;
+        }
+        #nav ul > li > a:hover {
+            color: #ff00ff !important;
+        }
+        #contact-links {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        #contact-links a {
+            color: white;
+            margin-left: 10px;
+        }
+        #contact-links a:hover {
+            color: #ff00ff;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #343a40;
+        }
+    </style>
+</head>
 <!-- Nav -->
 <nav id="nav">
     <ul>
@@ -53,8 +70,17 @@
                 <li><a href="#intro">Certifications</a></li>
                 <li><a href="#main">My Portfolio</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </li>
     </ul>
+    <div id="contact-links">
+        <a href="https://www.linkedin.com/in/cobusreyneke/" target="_blank">
+            <img src="icons/linkedin.png" alt="LinkedIn" class="rounded-circle" style="width: 20px; height: 20px;">
+        </a>
+        <a href="https://www.datacamp.com/portfolio/cobusreyneke4" target="_blank">
+            <img src="icons/datacamp.png" alt="DataCamp" class="rounded-circle" style="width: 20px; height: 20px;">
+        </a>
+    </div>
 </nav>
 <body class="homepage is-preload">
     <div id="page-wrapper">
@@ -103,8 +129,7 @@
                 </div>
                 <footer>
                     <ul class="actions">
-                        <li><a href="#" class="button large">Get Started</a></li>
-                        <li><a href="#" class="button alt large">Learn More</a></li>
+                        <li><a href="assets\pdf\Cobus Reyneke - Data Analyst.pdf" class="button large">CV</a></li>
                     </ul>
                 </footer>
             </section>
@@ -126,7 +151,7 @@
                                         <img src="images/projects/1.jpg" alt="Project 1 Image" class="card-img-top">
                                         <div class="card-body text-center">
                                             <h5 class="card-title">Churn Analysis - Power BI</h5>
-                                            <p class="card-text">Followed the steps of cleaning, analyzing, and interpreting data from a fictitious cell company to discover possible reasons for high churn rates in certain demographics.</p>
+                                            <p class="card-text">Followed the steps of cleaning, analyzing, interpreting data from a fictitious cell company to discover possible reasons for high churn rates in certain demographics.</p>
                                             <a href="#" class="btn btn-primary me-2">Blog Post</a>
                                             <a href="#" class="btn btn-secondary">Source Code</a>
                                         </div>
@@ -200,28 +225,6 @@
                             </div>
                         </div>
                     </section>
-
-                    <!-- Contact Me Section -->
-                    <section id="contact" class="container my-5 py-5 text-center" style="background-color: #343a40; color: white;">
-                        <h2 class="mb-4">Contact Me</h2>
-                        <div class="text-center mb-4">
-                            <i class="bi bi-envelope-fill me-2"></i>
-                            <a href="mailto:youremail@example.com" class="text-white">cobusreyneke4@gmail.com</a>
-                        </div>
-                        <div class="row justify-content-center">
-                            <a href="https://www.linkedin.com/in/cobusreyneke/" target="_blank" class="mx-2">
-                                <img src="icons/linkedin.png" alt="LinkedIn" class="rounded-circle p-2 bg-pink" style="width: 50px; height: 50px;">
-                            </a>
-                            <span>LinkedIn</span>
-                        </div>
-                        <div class="row justify-content-center">
-                            <a href="https://www.datacamp.com/portfolio/cobusreyneke4" target="_blank" class="mx-2">
-                                <img src="icons/datacamp.png" alt="DataCamp" class="rounded-circle p-2 bg-pink" style="width: 50px; height: 50px;">
-                            </a>
-                            <span>DataCamp</span>
-                        </div>
-                    </section>
-
                 </div>
             </div>
         </section>
