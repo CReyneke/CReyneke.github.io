@@ -1,182 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cobus Reyneke</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-        }
-
-        .navbar {
-            background-color: #343a40;
-        }
-
-        .navbar-brand, .nav-link {
-            color: white !important;
-        }
-
-        .nav-link:hover {
-            color: #ffcc00 !important;
-        }
-
-        .header {
-            background: url('path_to_your_header_image.jpg') no-repeat center center;
-            background-size: cover;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .header-title {
-            color: white;
-            font-size: 2.5rem;
-            font-weight: bold;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 2rem;
-            color: #007bff;
-        }
-
-        .about-img {
-            border-radius: 50%;
-            border: 3px solid #007bff;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 1rem;
-        }
-
-        .card {
-            border: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card-title {
-            color: #007bff;
-        }
-
-        .contact-section {
-            background-color: #007bff;
-            color: white;
-        }
-
-        .contact-section a {
-            color: #ffcc00;
-        }
-
-        .social-icon {
-            width: 50px;
-            height: 50px;
-            margin: 0 10px;
-        }
-
-        .social-icon img {
-            width: 100%;
-            height: auto;
-        }
-
-        .about-section {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .about-content {
-            max-width: 600px;
-        }
-
-        @media (max-width: 767px) {
-            .search-bar {
-                width: 100%;
-                max-width: none;
-            }
-
-            .card-text {
-                font-size: 0.9rem;
-            }
-
-            .header-title {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Header Section -->
-    <div class="header">
-        <h1 class="header-title">Cobus Reyneke</h1>
+<div class="tab-pane fade show active" id="about">
+    <div class="container text-center my-5">
+        <h2>About Me</h2>
+        <img src="path/to/your/image.png" alt="Profile Image" class="about-img mb-4">
+        <p>
+            Hi there 👋 I am a data scientist who:
+            <br>💪 loves to solve complex problems in diverse domains
+            <br>🌍 is currently working in the field of Climate Change
+            <br>🔥 handled challenging tasks in Bioinformatics & Telecommunications
+            <br>⚡ plays with all kinds of data structures – text, image, graph, numerical etc
+            <br>🌟 at the end of the day, aims to make the data shine!
+        </p>
     </div>
+</div>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">Cobus Reyneke</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!-- CV Tab -->
+<div class="tab-pane fade" id="cv">
+    <div class="container text-center my-5">
+        <h2>CV</h2>
+        <p>Here you can add your CV details...</p>
+    </div>
+</div>
 
-    <!-- About Section -->
-    <section id="about" class="container text-center my-5 about-section">
-        <img src="images/about/1.jpg" alt="Profile Image" class="about-img">
-        <div class="about-content">
-            <h2 class="section-title">About</h2>
-            <p style="max-width: 600px; margin: 0 auto;">
-                My name is Cobus Reyneke. I am a high school teacher with a special interest in data analytics.
-                Finding complex links in data and using these insights to make interesting stories and visualizations is what
-                I love to do. I'm exceptionally skilled at using Power BI to create dashboards and live visualizations
-                that are interesting and useful. I'm also very good at using Python to change, analyze, and automate data processes.
-            </p>
-            <p style="max-width: 600px; margin: 1rem auto 0;">
-                I'm also strong at Excel, where I use advanced tools, pivot tables, and macros to analyze and report data effectively. 
-                Because I know SQL, I can handle and query big datasets accurately, which helps me create effective data pipelines.
-            </p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="container my-5">
-        <h2 class="section-title text-center">Projects</h2>
+<!-- Projects Tab -->
+<div class="tab-pane fade" id="projects">
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Projects</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
@@ -184,7 +32,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Churn Analysis - Power BI</h5>
                         <p class="card-text">Followed the steps of cleaning, analyzing, and interpreting data from a fictitious cell company to discover possible reasons for high churn rates in certain demographics.</p>
-                        <a href="https://www.linkedin.com/in/cobusreyneke/overlay/1704853269578/single-media-viewer/?profileId=ACoAAD5hUQQBGflIkS9bNXB97ULzDFzeqhdyQJY" class="btn btn-outline-primary">Source Code</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
                     </div>
                 </div>
             </div>
@@ -194,7 +42,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">HR Analytics - PowerBI</h5>
                         <p class="card-text">Utilized various Power BI skills to import, analyze, and visualize Human Resources (HR) data for a fictitious company in Power BI.</p>
-                        <a href="https://www.linkedin.com/in/cobusreyneke/overlay/1705218671128/single-media-viewer/?profileId=ACoAAD5hUQQBGflIkS9bNXB97ULzDFzeqhdyQJY" class="btn btn-outline-primary">Source Code</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
                     </div>
                 </div>
             </div>
@@ -204,78 +52,27 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Olympics Data Exploration - SQL</h5>
                         <p class="card-text">Used a wide range of SQL skills to sort, analyze, and interpret Olympics data and answer a set of 20 questions related to the data.</p>
-                        <a href="https://github.com/CReyneke/Olympics-Data-Exploration/blob/main/notebook.ipynb" class="btn btn-outline-primary">Source Code</a>
+                        <a href="#" class="btn btn-secondary">Source Code</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+</div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="container my-5">
-        <h2 class="section-title text-center">Skills</h2>
-        <div class="row">
-            <div class="col-md-3 mb-4">
-                <div class="card h-100 text-center">
-                    <img src="images/skills/1.png" alt="Skill 1 Icon" class="card-img-top mx-auto mt-4" style="width: 100px; height: 100px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Python</h5>
-                        <p class="card-text">Skilled in Python for data analysis and automation, with experience in libraries such as Pandas, NumPy, and Matplotlib for data manipulation, analysis, and visualization.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card h-100 text-center">
-                    <img src="images/skills/2.png" alt="Skill 2 Icon" class="card-img-top mx-auto mt-4" style="width: 100px; height: 100px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Power BI</h5>
-                        <p class="card-text">Experienced in using Power BI for data visualization and business intelligence. Capable of creating interactive dashboards, reports, and charts to present data insights effectively.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card h-100 text-center">
-                    <img src="images/skills/3.png" alt="Skill 3 Icon" class="card-img-top mx-auto mt-4" style="width: 100px; height: 100px;">
-                    <div class="card-body">
-                        <h5 class="card-title">SQL</h5>
-                        <p class="card-text">Proficient in SQL for data manipulation and analysis, including querying databases, joining tables, and performing aggregate functions.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card h-100 text-center">
-                    <img src="images/skills/4.png" alt="Skill 4 Icon" class="card-img-top mx-auto mt-4" style="width: 100px; height: 100px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Data Storytelling</h5>
-                        <p class="card-text">Adept at using data visualization and narrative techniques to tell compelling stories with data.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Me Section -->
-    <section id="contact" class="container my-5 py-5 text-center contact-section">
-        <h2 class="section-title mb-4">Contact Me</h2>
-        <div class="text-center mb-4">
-            <i class="bi bi-envelope-fill me-2"></i>
-            <a href="mailto:cobusreyneke4@gmail.com">cobusreyneke4@gmail.com</a>
-        </div>
-        <div class="d-flex justify-content-center">
-            <a href="https://www.linkedin.com/in/cobusreyneke/" target="_blank" class="social-icon">
-                <img src="icons/linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://www.datacamp.com/portfolio/cobusreyneke4" target="_blank" class="social-icon">
-                <img src="icons/datacamp.png" alt="DataCamp">
-            </a>
-            <a href="https://medium.com/@cobusreyneke4" target="_blank" class="social-icon">
-                <img src="icons/medium.png" alt="Medium">
-            </a>
-        </div>
-    </section>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.querySelectorAll('.nav-link').forEach(function(navLink) {
+    navLink.addEventListener('click', function() {
+        document.querySelectorAll('.tab-pane').forEach(function(tabPane) {
+            tabPane.classList.remove('show', 'active');
+        });
+        document.querySelector(this.getAttribute('href')).classList.add('show', 'active');
+    });
+});
+</script>
 </body>
 
 </html>
