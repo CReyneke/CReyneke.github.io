@@ -16,7 +16,7 @@
         }
 
         .navbar {
-            background-color: #007bff;
+            background-color: #343a40;
         }
 
         .navbar-brand, .nav-link {
@@ -27,24 +27,22 @@
             color: #ffcc00 !important;
         }
 
-        .search-bar {
-            width: 100%;
-            max-width: 300px;
-            margin-left: auto;
+        .header {
+            background: url('path_to_your_header_image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .search-bar input {
-            border: none;
-            border-radius: 20px;
-            padding: 5px 10px;
-            width: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
-        }
-
-        .search-bar input:focus {
-            outline: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        .header-title {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
         }
 
         .section-title {
@@ -60,6 +58,7 @@
             width: 150px;
             height: 150px;
             object-fit: cover;
+            margin-bottom: 1rem;
         }
 
         .card {
@@ -96,6 +95,18 @@
             height: auto;
         }
 
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .about-content {
+            max-width: 600px;
+        }
+
         @media (max-width: 767px) {
             .search-bar {
                 width: 100%;
@@ -105,11 +116,20 @@
             .card-text {
                 font-size: 0.9rem;
             }
+
+            .header-title {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 
 <body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1 class="header-title">Cobus Reyneke</h1>
+    </div>
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
@@ -132,27 +152,26 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <div class="search-bar ms-3">
-                    <input type="text" class="form-control" placeholder="Search...">
-                </div>
             </div>
         </div>
     </nav>
 
     <!-- About Section -->
-    <section id="about" class="container text-center my-5">
-        <h2 class="section-title">About</h2>
-        <img src="images/about/1.jpg" alt="Profile Image" class="about-img mb-4">
-        <p class="lead">
-            My name is Cobus Reyneke. I am a high school teacher with a special interest in data analytics.
-            Finding complex links in data and using these insights to make interesting stories and visualizations is what
-            I love to do. I'm exceptionally skilled at using Power BI to create dashboards and live visualizations
-            that are interesting and useful. I'm also very good at using Python to change, analyze, and automate data processes.
-        </p>
-        <p class="lead">
-            I'm also strong at Excel, where I use advanced tools, pivot tables, and macros to analyze and report data effectively. 
-            Because I know SQL, I can handle and query big datasets accurately, which helps me create effective data pipelines.
-        </p>
+    <section id="about" class="container text-center my-5 about-section">
+        <img src="images/about/1.jpg" alt="Profile Image" class="about-img">
+        <div class="about-content">
+            <h2 class="section-title">About</h2>
+            <p style="max-width: 600px; margin: 0 auto;">
+                My name is Cobus Reyneke. I am a high school teacher with a special interest in data analytics.
+                Finding complex links in data and using these insights to make interesting stories and visualizations is what
+                I love to do. I'm exceptionally skilled at using Power BI to create dashboards and live visualizations
+                that are interesting and useful. I'm also very good at using Python to change, analyze, and automate data processes.
+            </p>
+            <p style="max-width: 600px; margin: 1rem auto 0;">
+                I'm also strong at Excel, where I use advanced tools, pivot tables, and macros to analyze and report data effectively. 
+                Because I know SQL, I can handle and query big datasets accurately, which helps me create effective data pipelines.
+            </p>
+        </div>
     </section>
 
     <!-- Projects Section -->
